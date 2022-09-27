@@ -1,2 +1,2 @@
-# SimpleTodoMicroService
-Simple Blazor App to maintain a todo list
+# Simple Library Management app
+
