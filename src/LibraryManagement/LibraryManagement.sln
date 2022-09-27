@@ -19,25 +19,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{C6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Customer", "Customer", "{BECE1632-2D89-4CCE-ABFC-025465570FF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lending.API", "Lending.API\Lending.API.csproj", "{146B6245-3749-40D7-8FCA-E21F6FB3EAF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lending.API", "Lending\Lending.API\Lending.API.csproj", "{146B6245-3749-40D7-8FCA-E21F6FB3EAF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lending.Infra", "Lending.Infra\Lending.Infra.csproj", "{CC71182D-F8E9-4AE8-B9B1-0F55277457D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lending.Infra", "Lending\Lending.Infra\Lending.Infra.csproj", "{CC71182D-F8E9-4AE8-B9B1-0F55277457D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.API", "Inventory.API\Inventory.API.csproj", "{BF0BE2B1-9B5D-47A3-8E99-8E51CD9A394B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.API", "Inventory\Inventory.API\Inventory.API.csproj", "{BF0BE2B1-9B5D-47A3-8E99-8E51CD9A394B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Infra", "Inventory.Infra\Inventory.Infra.csproj", "{73422516-0CB9-4F45-A951-B30A442155C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Infra", "Inventory\Inventory.Infra\Inventory.Infra.csproj", "{73422516-0CB9-4F45-A951-B30A442155C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "Identity.API\Identity.API.csproj", "{7A3EACB0-FCF1-460E-B6BB-9406143327C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "Identity\Identity.API\Identity.API.csproj", "{7A3EACB0-FCF1-460E-B6BB-9406143327C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Infra", "Identity.Infra\Identity.Infra.csproj", "{81126AFA-6F1B-4A88-AE89-3FD7100F0076}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Infra", "Identity\Identity.Infra\Identity.Infra.csproj", "{81126AFA-6F1B-4A88-AE89-3FD7100F0076}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.API", "Customer.API\Customer.API.csproj", "{1BE33B0A-5756-4132-AB93-1D9C10EFF66F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.API", "Customer\Customer.API\Customer.API.csproj", "{1BE33B0A-5756-4132-AB93-1D9C10EFF66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Infra", "Customer.Infra\Customer.Infra.csproj", "{8ADAA9F6-A473-4C46-8165-56D08CF980B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Infra", "Customer\Customer.Infra\Customer.Infra.csproj", "{8ADAA9F6-A473-4C46-8165-56D08CF980B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrayManagement.Web", "LibrayManagement.Web\LibrayManagement.Web.csproj", "{B5804409-12A6-4E84-B5C2-BAF3863E77DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrayManagement.Web", "Clients\LibrayManagement.Web\LibrayManagement.Web.csproj", "{B5804409-12A6-4E84-B5C2-BAF3863E77DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Gateway", "Api.Gateway\Api.Gateway.csproj", "{F7E50CD7-0F2D-4B9A-9983-C83D2CCD5384}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Gateway", "ApiGateway\Api.Gateway\Api.Gateway.csproj", "{F7E50CD7-0F2D-4B9A-9983-C83D2CCD5384}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
