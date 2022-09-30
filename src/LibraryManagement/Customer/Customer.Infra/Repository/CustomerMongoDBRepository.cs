@@ -19,6 +19,10 @@ namespace Customer.Infra.Repository
 
         public async Task<CustomerModel> CreateCustomer(CustomerModel customer)
         {
+            var existing = await GetCustomerByEmail(customer.Email);
+            if (existing != null)
+                throw new InvalidDataException($"Customer with email {customer.Email} already exists");
+
             await _customerCollection.InsertOneAsync(customer);
             return customer;
         }
@@ -31,7 +35,7 @@ namespace Customer.Infra.Repository
 
         public async Task<CustomerModel> GetCustomerByEmail(string email)
         {
-            var customer = await _customerCollection.FindSync(c => c.Email.ToUpper()==email.ToUpper()).FirstOrDefaultAsync();
+            var customer = await _customerCollection.FindSync(c => c.Email.ToUpper() == email.ToUpper()).FirstOrDefaultAsync();
             return customer;
         }
 
@@ -41,10 +45,10 @@ namespace Customer.Infra.Repository
                                                        .Set(f => f.Email, customer.Email)
                                                        .Set(f => f.Name, customer.Name);
 
-            var existingCustomer = await _customerCollection.FindSync(c => c.Id.ToUpper()==customerId.ToUpper()).FirstOrDefaultAsync();
+            var existingCustomer = await _customerCollection.FindSync(c => c.Id.ToUpper() == customerId.ToUpper()).FirstOrDefaultAsync();
             if (existingCustomer != null)
             {
-                var updateResult = await _customerCollection.UpdateOneAsync(c => c.Id.ToUpper()== customerId.ToUpper(), update);
+                var updateResult = await _customerCollection.UpdateOneAsync(c => c.Id.ToUpper() == customerId.ToUpper(), update);
                 return customer;
             }
 
