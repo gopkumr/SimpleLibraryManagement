@@ -16,7 +16,7 @@ namespace Inventory.Infra.Db
             context.Database.EnsureDeleted();
             context.Database.EnsureCreated();
 
-            context.Books.Add(new BookModel()
+            context.books.Add(new BookModel()
             {
                 Title = "Jungle Book",
                 Author = "Rudyard Kipling",

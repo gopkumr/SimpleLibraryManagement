@@ -22,6 +22,6 @@ namespace Inventory.Infra.Db
               .HasKey(p => new { p.Id });
         }
 
-        public DbSet<BookModel> Books { get; set; }
+        public DbSet<BookModel> books { get; set; }
     }
 }

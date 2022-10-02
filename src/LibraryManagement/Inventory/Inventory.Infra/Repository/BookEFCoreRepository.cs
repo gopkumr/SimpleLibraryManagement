@@ -15,7 +15,7 @@ namespace Inventory.Infra.Repository
 
         public async Task<BookModel> AddNewBook(BookModel book)
         {
-            var addedModel = await _dbContext.Books.AddAsync(book);
+            var addedModel = await _dbContext.books.AddAsync(book);
             await _dbContext.SaveChangesAsync();
 
             return addedModel.Entity;
@@ -23,25 +23,25 @@ namespace Inventory.Infra.Repository
 
         public async Task<IEnumerable<BookModel>> GetAllBooks()
         {
-            var books = await _dbContext.Books.OrderBy(q => q.Title).ToListAsync();
+            var books = await _dbContext.books.OrderBy(q => q.Title).ToListAsync();
             return books;
         }
 
         public async Task<BookModel?> GetBookById(string id)
         {
-            var book = await _dbContext.Books.FirstOrDefaultAsync(q => q.Id.ToUpper() == id.ToUpper());
+            var book = await _dbContext.books.FirstOrDefaultAsync(q => q.Id.ToUpper() == id.ToUpper());
             return book;
         }
 
         public async Task<BookModel?> GetBookByTitle(string title)
         {
-            var book = await _dbContext.Books.FirstOrDefaultAsync(q => q.Title.ToUpper() == title.ToUpper());
+            var book = await _dbContext.books.FirstOrDefaultAsync(q => q.Title.ToUpper() == title.ToUpper());
             return book;
         }
 
         public async Task<IEnumerable<BookModel>> GetBooksByAuthor(string author)
         {
-            var books = await _dbContext.Books.Where(q => q.Author.ToUpper() == author.ToUpper()).ToListAsync();
+            var books = await _dbContext.books.Where(q => q.Author.ToUpper() == author.ToUpper()).ToListAsync();
             return books;
         }
 
